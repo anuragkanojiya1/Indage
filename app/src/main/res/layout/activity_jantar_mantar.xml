@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JantarMantar"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvj"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.6"
+                android:src="@drawable/jantarmantar"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jantar Mantar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="45dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvj"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Jantar Mantar, a fascinating complex of astronomical instruments, is located in the heart of New Delhi, India. Built by Maharaja Jai Singh II of Jaipur in the early 18th century, Jantar Mantar serves as a remarkable testament to India's rich heritage in the field of astronomy and scientific inquiry. Here's a detailed summary covering its history, architecture, and significance:
+
+History:
+Jantar Mantar was constructed between 1724 and 1730 by Maharaja Jai Singh II, who was not only a nobleman but also a keen astronomer and mathematician. He established several observatories across India, but the one in Delhi is the largest and most elaborate. The purpose of Jantar Mantar was to accurately observe and measure celestial phenomena such as the positions of stars, planets, and the sun, as well as to calculate time and astronomical events.
+
+Architecture:
+The architectural marvel of Jantar Mantar consists of 13 different astronomical instruments, each serving a specific purpose. These instruments are built using stone, marble, and masonry, and are meticulously designed to be both functional and aesthetically pleasing. Some of the notable instruments include:
+
+Samrat Yantra (Supreme Instrument): This massive sundial is the centerpiece of Jantar Mantar. It stands at a height of 27 meters and can accurately measure time to within two seconds using its shadow.
+
+Jai Prakash Yantra (Instrument of Victory): Consisting of two hemispherical structures with marble markings, this instrument was used to determine the positions of celestial objects relative to the observer's local horizon.
+
+Misra Yantra (Mixed Instrument): This instrument comprises a combination of several smaller instruments used for various astronomical calculations, including measuring the altitude and azimuth of celestial objects.
+
+Ram Yantra (Instrument of Equator): A pair of cylindrical structures with marble markings used to measure the altitude and azimuth of celestial objects relative to the celestial equator.
+
+These instruments, along with others like the Narivalaya Yantra (Equatorial Sundial) and the Kranti Yantra (Revolution Instrument), showcase the ingenuity and advanced scientific knowledge of their creators.
+
+Significance:
+Jantar Mantar holds immense historical and cultural significance as one of the finest examples of ancient Indian astronomy and scientific achievement. It served as a center for astronomical research and observation, contributing to advancements in the understanding of celestial mechanics and timekeeping. Additionally, Jantar Mantar is a popular tourist attraction, attracting visitors from around the world who come to marvel at its architectural splendor and learn about India's scientific heritage.
+
+In conclusion, Jantar Mantar stands as a living testament to India's rich astronomical tradition and scientific ingenuity. Its intricate instruments, designed with precision and foresight, continue to inspire awe and admiration, highlighting the country's enduring commitment to the pursuit of knowledge and understanding of the cosmos."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtj" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/jmbtn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textj"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

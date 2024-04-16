@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BodhGaya"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvb"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.6"
+                android:src="@drawable/mahabodhitemple"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bodh Gaya"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="45dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvb"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="
+Bodh Gaya, located in the Indian state of Bihar, is one of the most significant pilgrimage sites for Buddhists worldwide. It holds immense religious and historical importance as the place where Gautama Buddha attained enlightenment under the Bodhi Tree. Here's a detailed summary covering its history, significance, and cultural attractions:
+
+History:
+Bodh Gaya's history is deeply intertwined with the life of Gautama Buddha, the founder of Buddhism. According to Buddhist tradition, Siddhartha Gautama, as he was known before enlightenment, spent six years in rigorous meditation and ascetic practices in search of spiritual awakening. Eventually, he arrived at Bodh Gaya and sat in meditation under a Bodhi Tree, vowing not to rise until he attained enlightenment. After an intense period of meditation, he achieved enlightenment, becoming the Buddha (the Awakened One), and formulated the core teachings of Buddhism.
+
+Significance:
+Bodh Gaya holds profound spiritual significance for Buddhists worldwide as the site of Buddha's enlightenment, known as Bodhi or Nirvana. Pilgrims from various Buddhist traditions visit Bodh Gaya to pay homage to the Buddha, meditate under the Bodhi Tree, and walk in the footsteps of their spiritual master. The Mahabodhi Temple Complex, built adjacent to the Bodhi Tree, serves as the focal point of pilgrimage and houses various sacred relics and monuments.
+
+Mahabodhi Temple Complex:
+The Mahabodhi Temple Complex is a UNESCO World Heritage Site and comprises several structures of historical and architectural importance:
+
+Mahabodhi Temple: The main temple is an architectural masterpiece built in the 5th to 6th centuries CE by Emperor Ashoka and later renovated by various rulers. It enshrines a gilded image of the Buddha in a meditative posture, marking the spot where he attained enlightenment.
+
+Bodhi Tree: The sacred Bodhi Tree is believed to be a direct descendant of the original tree under which the Buddha meditated. It is customary for pilgrims to circumambulate the tree, offer prayers, and meditate in its shade.
+
+Vajrasana: Located beneath the Bodhi Tree, Vajrasana is the stone platform where the Buddha is said to have sat in meditation after attaining enlightenment. Pilgrims offer prostrations and meditate at this holy site.
+
+Animeshlochana Chaitya: A small shrine located near the Bodhi Tree, believed to be the spot where the Buddha spent the second week after enlightenment, gazing unwaveringly at the Bodhi Tree out of gratitude.
+
+Ratnachankrama: A jewel walkway surrounding the main temple, where the Buddha is said to have walked back and forth in meditation after enlightenment.
+
+Apart from the Mahabodhi Temple Complex, Bodh Gaya is also home to numerous monasteries, meditation centers, and museums that showcase Buddhist art, culture, and philosophy. The annual Bodh Gaya International Buddhist Conclave attracts scholars, practitioners, and enthusiasts from around the world to engage in dialogue and explore the teachings of the Buddha.
+
+In conclusion, Bodh Gaya stands as a sacred sanctuary of peace and enlightenment, where the transformative journey of the Buddha continues to inspire spiritual seekers and pilgrims of all backgrounds. Its rich history, architectural splendor, and spiritual ambiance make it a cherished destination for those seeking solace, wisdom, and inner transformation."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtb" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bgbtn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

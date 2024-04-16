@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TajMahal"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvt"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.2"
+            android:scaleY="1.6"
+            android:src="@drawable/tajmahal1"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taj Mahal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="45dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvt"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="
+The Taj Mahal, located in Agra, India, is one of the most iconic and recognized monuments in the world, renowned for its breathtaking beauty and timeless elegance. Built by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, the Taj Mahal stands as a masterpiece of Mughal architecture and a symbol of enduring love. Here's a detailed summary covering its history, architecture, and cultural significance:
+
+History:
+Construction of the Taj Mahal began in 1632, shortly after the death of Mumtaz Mahal during childbirth, and it took over 20,000 artisans and laborers nearly 22 years to complete. The monument was commissioned by Shah Jahan to immortalize his love for Mumtaz Mahal and to serve as her final resting place. The Taj Mahal was completed in 1653 and has since stood as a testament to the enduring power of love and the pinnacle of Mughal architectural achievement.
+
+Architecture:
+The Taj Mahal is a harmonious blend of various architectural styles, including Persian, Islamic, Turkish, and Indian influences. It is built primarily of white marble, which gives it its luminous appearance and ethereal beauty. The monument is set amidst a picturesque garden, with a reflecting pool that mirrors its majestic silhouette, creating a mesmerizing sight for visitors.
+
+The central feature of the Taj Mahal is its magnificent mausoleum, which houses the tombs of Shah Jahan and Mumtaz Mahal. The mausoleum is flanked by four minarets, each standing over 40 meters tall, which serve both as architectural elements and as a symbolic representation of the four corners of paradise in Islamic tradition.
+
+The interior of the Taj Mahal is adorned with intricate marble inlay work, delicate carvings, and precious gemstones, including jasper, jade, turquoise, and lapis lazuli. The walls are adorned with verses from the Quran, written in calligraphy, praising the virtues of paradise and eternal love.
+
+Cultural Significance:
+The Taj Mahal holds immense cultural and historical significance for India and the world. It is recognized as a UNESCO World Heritage Site and attracts millions of visitors each year, drawn by its unparalleled beauty and romantic allure. The Taj Mahal has inspired poets, artists, and writers for centuries, who have sought to capture its magnificence in words and images.
+
+Beyond its aesthetic appeal, the Taj Mahal serves as a symbol of India's rich cultural heritage and the artistic achievements of the Mughal Empire. It is also a testament to the power of love to transcend time and space, immortalizing the bond between Shah Jahan and Mumtaz Mahal for eternity.
+
+In conclusion, the Taj Mahal stands as a timeless masterpiece of architecture and a symbol of love and devotion. Its exquisite beauty, intricate craftsmanship, and profound symbolism continue to captivate and inspire people from around the world, making it one of the most cherished and iconic monuments in human history."
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtt" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tmbtn1"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="10dp"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

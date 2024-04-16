@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CholaTemple"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvc"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="2.1"
+                android:src="@drawable/cholatemple1"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chola Temple"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="45dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvc"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="
+The Red Fort, also known as Lal Qila, is a historic fortification located in the heart of New Delhi, the capital city of India. Built during the 17th century, it stands as a magnificent symbol of India's rich cultural heritage and architectural grandeur. Here's a detailed summary of its history, architecture, and cultural significance:
+
+History:
+Construction of the Red Fort began in 1638 under the reign of the Mughal Emperor Shah Jahan. It was commissioned as the new imperial residence and seat of power, following Shah Jahan's decision to shift the Mughal capital from Agra to Delhi. The fort was completed in 1648 and served as the main residence of the Mughal emperors for nearly 200 years. However, its significance diminished during the British colonial period, and it witnessed various alterations and looting. After India gained independence in 1947, the Red Fort became a symbol of the nation's sovereignty and was declared a UNESCO World Heritage Site in 2007.
+
+Architecture:
+The Red Fort is renowned for its stunning architecture, which blends elements of Persian, Timurid, and Indian styles. It is constructed primarily of red sandstone, which gives it its distinctive color and name. The fort is enclosed within massive walls that stretch over 2.5 kilometers in perimeter and rise up to 33 meters in height. Its imposing facade is punctuated by several monumental gates, including the Lahori Gate, which serves as the main entrance.
+
+Within the fort complex, visitors can explore a series of pavilions, courtyards, gardens, and ornate structures. The Diwan-i-Aam (Hall of Public Audience) was where the emperor would hold audiences and address the general public, while the Diwan-i-Khas (Hall of Private Audience) was reserved for private meetings and receptions. The Rang Mahal (Palace of Colors) served as the residence of the emperor's wives and mistresses, adorned with vibrant paintings and decorations. The Moti Masjid (Pearl Mosque), constructed of pristine white marble, stands out as a place of worship within the fort.
+
+Cultural Significance:
+The Red Fort holds immense cultural significance for India. It has been the site of numerous historic events, including the annual Independence Day celebrations on August 15th, when the Prime Minister of India hoists the national flag and delivers a speech from the ramparts of the fort. Additionally, the Red Fort attracts millions of visitors each year, both domestic and international, who come to marvel at its architectural splendor, learn about its rich history, and immerse themselves in India's cultural heritage.
+
+In conclusion, the Red Fort stands as a proud testament to India's glorious past and serves as a symbol of its enduring strength and resilience. Its awe-inspiring architecture, rich history, and cultural significance continue to captivate and inspire people from around the world."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ctbtn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

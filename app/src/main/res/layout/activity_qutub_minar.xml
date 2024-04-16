@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QutubMinar"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvq"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.6"
+                android:src="@drawable/qutubminar"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qutub Minar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="45dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvq"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Qutub Minar, located in Delhi, India, is one of the most iconic and tallest minarets in the world. It stands as a remarkable testament to the architectural brilliance of the early Islamic period in India. Here's a detailed summary covering its history, architecture, and cultural significance:
+
+History:
+Qutub Minar was built during the early 13th century by Qutb-ud-din Aibak, the first ruler of the Delhi Sultanate, following his victory over the last Hindu kingdom in Delhi. Construction began in 1199 AD, and the minaret was completed in 1220 AD by Aibak's successor, Iltutmish. The name Qutub Minar is derived from Qutb-ud-din Aibak's name, signifying its association with the founder of the Delhi Sultanate.
+Architecture:
+The Qutub Minar complex is a masterpiece of Indo-Islamic architecture, blending elements of Persian, Turkish, and Indian styles. The minaret itself is a towering structure made of red sandstone and marble, soaring to a height of 72.5 meters (238 feet). It consists of five distinct stories, each marked by a projecting balcony and adorned with intricate carvings and inscriptions from the Quran.
+
+The first three stories of the minaret are constructed in red sandstone, while the upper two stories are built in marble. The entire structure is embellished with ornate geometric patterns, calligraphy, and motifs, showcasing the exquisite craftsmanship of the artisans of that era.
+
+Adjacent to the Qutub Minar is the Quwwat-ul-Islam Mosque, which was built by Qutb-ud-din Aibak. The mosque is one of the earliest examples of Indo-Islamic architecture in India and incorporates elements from earlier Hindu and Jain temples, including reused pillars and decorative motifs.
+
+The Qutub Minar complex also includes several other notable structures, such as the Alai Darwaza (Alai Gate), built by Ala-ud-din Khilji, and the Iron Pillar of Delhi, an ancient iron pillar dating back to the 4th century AD, which stands as a testament to the advanced metallurgical skills of ancient India.
+
+Cultural Significance:
+Qutub Minar holds immense cultural and historical significance for India. It is a designated UNESCO World Heritage Site and attracts millions of visitors each year, both domestic and international, who come to marvel at its architectural splendor and learn about India's rich heritage.
+
+The minaret serves as a symbol of Delhi's rich history and multicultural heritage, reflecting the influence of various dynasties and civilizations that have shaped the region over centuries. It stands as a reminder of India's syncretic culture, where diverse traditions and artistic styles coexist harmoniously.
+
+In conclusion, Qutub Minar stands as a towering symbol of India's architectural and cultural heritage, embodying the spirit of innovation and creativity that defined the early Islamic period in the country. Its majestic presence and historical significance continue to inspire awe and admiration, attracting visitors from around the world to witness its timeless beauty."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtq" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qmbtn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textq"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

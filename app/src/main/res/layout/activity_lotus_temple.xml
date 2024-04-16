@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LotusTemple"
+    android:background="@color/black"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvl"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/lotustemple"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lotus Temple"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="45dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvl"
+        android:layout_marginTop="5dp"
+        />
+
+        <TextView
+            android:id="@+id/textl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="The Lotus Temple, located in New Delhi, India, is a significant architectural masterpiece of the Baha'i Faith. This religion is related to Hinduism and emphasizes the unity of all religions. The temple is named after its lotus-like shape, which is formed by 27 marble petals arranged in clusters. The temple is open to people of all religions, providing a peaceful environment for meditation and reflection.
+
+The Lotus Temple was completed in 1986 and has since received numerous accolades for its extraordinary architecture and design. The temple is made of marble, cement, dolomite, and sand, and its construction was a significant feat, involving over 400 carpenters who worked for more than six years. The temple's design is a testament to the use of primitive technology and the sincerity and respect of the laborers who built it.
+
+The Lotus Temple is the seventh house of worship of the Baha'i Faith, with the first one built in Chicago in 1912. The eighth house of worship is currently planned to be built in Santiago, Chile, making it the first one to be built in South America.
+
+The temple's architecture is inspired by the lotus flower, which is a sacred symbol in Hinduism, Buddhism, and several other cultures. The temple has nine doors that open onto a central hall, which can accommodate up to 2,500 people. The temple's design is such that it appears to float on water, and it is surrounded by nine pools of water, which reflect its beauty.
+
+The Lotus Temple is not only an architectural marvel but also a symbol of unity, peace, and harmony. It is a place where people of all religions can come together and worship in a peaceful and serene environment. The temple's design is a testament to the power of unity, as it brings together people of different faiths and backgrounds.
+
+The temple's construction was a significant achievement, given the challenges faced during its construction. The use of primitive technology and the laborers' sincerity and respect made it possible to build this iconic temple. The temple's design is a reflection of the spiritual significance of the Baha'i Faith, and it is a symbol of unity, peace, and harmony.
+
+In conclusion, the Lotus Temple is a remarkable architectural masterpiece that is open to people of all religions. Its design is inspired by the lotus flower, which is a sacred symbol in several cultures. The temple's construction was a significant achievement, given the challenges faced during its construction. The temple's design and construction are a testament to the power of unity, peace, and harmony, making it a symbol of unity, peace, and harmony for people of all faiths and backgrounds."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtl" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ltbtn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

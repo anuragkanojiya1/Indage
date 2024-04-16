@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedFort"
+    android:background="@color/black"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvr"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.2"
+                android:scaleY="1.8"
+                android:src="@drawable/redfort"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Fort"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="45dp"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvr"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/textr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="The Red Fort, located in the heart of New Delhi, India, is one of the most iconic historical monuments in the country. Its history, architecture, and cultural significance make it a UNESCO World Heritage Site and a symbol of India's rich past.
+
+History:
+Construction of the Red Fort began in 1638 under the orders of the Mughal Emperor Shah Jahan, who decided to shift the capital of the Mughal Empire from Agra to Delhi. It took nearly a decade to complete the construction of the fort, with its inauguration taking place in 1648. The fort served as the main residence of the Mughal emperors for around 200 years until the British colonial period.
+
+Architecture:
+The Red Fort is renowned for its architectural brilliance, blending Persian, Timurid, and Indian architectural styles. The fort is built using red sandstone, which gives it its distinctive reddish hue and lends it its name. Its massive walls rise up to 33 meters in height and are surrounded by a moat, which was once filled with water from the Yamuna River for added security. The fort is laid out in a rectangular shape, covering an area of about 254 acres, and is enclosed by walls that stretch over two kilometers in length.
+
+The fort's main entrance is through the Lahori Gate, which faces the famous Chandni Chowk market. Once inside, visitors are greeted by a series of pavilions, courtyards, gardens, and ornate marble structures. The fort's most prominent structures include the Diwan-i-Aam (Hall of Public Audience), where the emperor would address the general public, and the Diwan-i-Khas (Hall of Private Audience), adorned with intricate marble inlay work and once used for private meetings and receptions. The fort also houses the Rang Mahal (Palace of Colors), which was the residence of the emperor's wives and mistresses, and the Moti Masjid (Pearl Mosque), a pristine white marble mosque situated within the fort complex.
+
+Cultural Significance:
+The Red Fort holds immense cultural significance for the people of India. It served as the backdrop for many significant events in Indian history, including the annual celebrations of India's Independence Day, which take place on August 15th, when the Prime Minister of India hoists the national flag and delivers a speech from the ramparts of the fort. Additionally, the Red Fort is a popular tourist destination, attracting visitors from around the world who come to admire its architecture, explore its history, and experience its cultural vibrancy.
+
+In conclusion, the Red Fort stands as a testament to India's glorious past and architectural brilliance. Its imposing red walls, intricate marble structures, and rich history continue to captivate visitors and serve as a reminder of India's cultural heritage and resilience."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtr" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rfbtn1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Ticket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginVertical="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
